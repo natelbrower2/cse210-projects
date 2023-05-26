@@ -2,6 +2,7 @@ using System;
 
 namespace develop03
 {
+    //The purpose of scripture is to hold a scripture including its reference and the words in the scripture. It can hide words, get words, get the referene, and know when all the words are hidden.
     public class Scripture
     {
         private List<Word> _words = new List<Word>();
@@ -52,7 +53,7 @@ namespace develop03
         {
             return this._reference.formatTheReference();
         }
-        public bool endConditionsMet()
+        public bool allWordsHidden()
         {
             bool rValue = true;
             foreach (Word word in _words)

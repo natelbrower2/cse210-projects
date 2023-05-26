@@ -2,6 +2,7 @@ using System;
 
 namespace develop03
 {
+    //The purpose of Word is to keep track of a word along with the hidden version of the word. It also keeps track of whether or not the word is hidden.
     public class Word
     {
         private string _word;

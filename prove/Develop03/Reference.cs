@@ -2,6 +2,7 @@ using System;
 
 namespace develop03
 {
+    //The purpose of Reference is to hold the book, chapter, and verse of a scripture reference. It can also format the reference.
     public class Reference
     {
         private string book;

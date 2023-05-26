@@ -47,7 +47,7 @@ namespace develop03
                 Console.WriteLine(scripture.getRenderedText() + "\n");
                 Console.WriteLine("Press enter to continue or type 'quit' to finish: ");
                 response = Console.ReadLine();
-                if (response == "quit" || scripture.endConditionsMet())
+                if (response == "quit" || scripture.allWordsHidden())
                 {
                     run = false;
                 }

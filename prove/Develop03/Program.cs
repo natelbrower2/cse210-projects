@@ -10,6 +10,8 @@ namespace develop03
             string response = "";
             string reference = "";
             string verse = "";
+
+            //To exceed requirements, I made it so the user can choose between 3 scriptures to memorize, or add their own scripture. The code for this is below.
             Console.WriteLine("1. Proverbs 3:5-6");
             Console.WriteLine("2. John 3:16");
             Console.WriteLine("3. Alma 7:11");
@@ -38,6 +40,8 @@ namespace develop03
                 Console.WriteLine("Please type this verse into the console: ");
                 verse = Console.ReadLine();
             }
+
+
             response = "";
             Scripture scripture = new Scripture(reference, verse);
             while (run)
@@ -56,22 +60,6 @@ namespace develop03
                     scripture.HideRandomWords(3);
                 }
             }
-
-
-
-
-            // string verse;
-
-            // Scripture testing = new Scripture("For God so loved the world");
-            // verse = testing.getRenderedText();
-            // Console.WriteLine(verse);
-            // Console.ReadLine();
-            // testing.HideRandomWords(6);
-            // verse = testing.getRenderedText();
-            // Console.WriteLine(verse);
-
-            // }
-
         }
     }
 }

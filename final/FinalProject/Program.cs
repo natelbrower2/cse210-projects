@@ -15,7 +15,7 @@ namespace FinalProject
                 Console.Clear();
                 Stats stats = game.GetStats();
                 Console.WriteLine($"Win percentage = {stats.GetWinPercentage()}%\n");
-                Console.WriteLine("Main Menue Options:\n");
+                Console.WriteLine("Main Menu Options:\n");
                 Console.WriteLine("  1. Tic-Tac-Toe\n  2. GuessingGame\n  3. View Session Stats\n  4. Quit");
                 Console.Write("Select a choice from the menue: ");
                 input = Console.ReadLine();
